@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://cardadfar.github.io/stuco_webdev_website/assets/files/html_starter.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lea's Website</title>                           <!-- Give Title -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./Give Me a Title!_files/style.css">  <!-- Insert StyleSheet -->
+    <link rel="icon" href="https://cardadfar.github.io/stuco_webdev_website/assets/files/cool-icon.png">                    <!-- Insert Icon -->
+    <script src="./Give Me a Title!_files/jquery.min.js"></script>
+</head>
+<body data-gr-c-s-loaded="true" style ="background-color: rgb(244,244,245)">
+
+    <style type="text/css">
+
+        .navBar {
+            position: fixed;
+            z-index: 1;
+            top: 25%;
+            left: 50px;
+            background-color: none;
+            overflow-x: hidden;
+        }
+
+        .navBar a {
+            padding: 20px 20px 20px 0px;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            color: #818181;
+            display: block;
+        }
+
+        .navBar a:hover {
+            color: black;
+        }
+
+        .accordion {
+            background-color: rgb(244,244,245); 
+            color: #818181;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            display: block;
+            padding: 20px 20px 20px 0px;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+        }
+
+        .active, .accordion:hover {
+            color: black; 
+        }
+
+        .projectPanel{
+            padding: 0 10px;
+            display: none;
+            background-color: none;
+            overflow: hidden;
+        }
+
+        .main {
+            margin-left: 200px; /* Same as the width of the sidenav */
+            padding: 0px 10px;
+        }
+
+        .menuLine {
+            border-left: 2px solid black;
+            height: 300px;
+            position: absolute;
+            left: 200px;
+            margin-left: -3px;
+            top: 27.5%;
+        }
+
+            .container {
+            position: relative;
+            width: 100%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: none;
+            color: black;
+            font-size: 30px;
+            padding: 16px 32px;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding : 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+
+    </style>
+
+
+
+
+    <div class = "navBar">
+        <a href= "index.html"> ABOUT </a>
+        <a href= "researchProjects.html"> RESEARCH <br> PROJECT</a>
+        <a href= "personalProjects.html"> PERSONAL <br> PROJECT</a>
+        <a href= "resume.html"> RESUME </a>
+        <a href= "contact.html"> CONTACT </a>
+    </div>
+
+    <div class= "menuLine"> </div>
+
+
+    <div class = "main" >
+
+        <div class= "row">
+            <div class= "column">
+                <div class= "container">
+                <img src= "comingPlant.jpg" class= "image" style= "width: 100%">
+                    <div class= "middle">
+                        <div class= "text"> Ballroom Banners </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class= "column">
+                <div class= "container">
+                <img src= "comingPlant.jpg" class= "image" style= "width: 100%">
+                    <div class= "middle">
+                        <div class= "text"> Ballroom Posters </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+    </script>  
+
+
+
+</body></html>
