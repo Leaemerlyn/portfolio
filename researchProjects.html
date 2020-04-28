@@ -16,10 +16,11 @@
         .navBar {
             position: fixed;
             z-index: 1;
-            top: 23%;
+            top: 50px;
             left: 50px;
             background-color: none;
-            overflow-x: hidden;
+            max-height: calc(100% - 50px);
+            overflow-y: auto;
         }
 
         .navBar a {
@@ -35,31 +36,6 @@
             color: black;
         }
 
-        .accordion {
-            background-color: rgb(244,244,245); 
-            color: #818181;
-            border: none;
-            text-align: left;
-            outline: none;
-            transition: 0.4s;
-            display: block;
-            padding: 20px 20px 20px 0px;
-            text-decoration: none;
-            font-size: 20px;
-            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-
-        }
-
-        .active, .accordion:hover {
-            color: black; 
-        }
-
-        .projectPanel{
-            padding: 0 10px;
-            display: none;
-            background-color: none;
-            overflow: hidden;
-        }
 
         .main {
             margin-left: 200px; /* Same as the width of the sidenav */
@@ -156,7 +132,6 @@
         <a href= "contact.html"> CONTACT </a>
     </div>
 
-    <div class= "menuLine"> </div>
 
     <div class= "main">
         <h1 style= "text-align: center; padding-top: 50px" > LEA EMERLYN</h1> <br>
