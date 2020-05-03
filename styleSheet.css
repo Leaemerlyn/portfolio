@@ -1,0 +1,151 @@
+       
+/* --------------------------------------------- Vertical Navigation Bar --------------------------------------------------*/
+
+        .navBar {
+            position: fixed;
+            z-index: 1;
+            top: 50px;
+            left: 50px;
+            background-color: none;
+            max-height: calc(100% - 50px);
+            overflow-y: auto;
+        }
+
+
+        .navBar a {
+            padding: 20px 20px 20px 0px;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            color: #818181;
+            display: block;
+        }
+
+
+        .navBar a:hover {
+            color: black;
+        }
+
+/*--------------------------------------------------------------------------------------------------------------------- */
+
+
+/*-------------------------------------------------- The actual content ------------------------------------------------*/
+
+        .main {
+            margin-left: 180px;
+            padding: 0px 80px;
+        }
+
+/* ---------------------------------------------------------------------------------------------------------------------*/
+
+
+/* -------------------------------------------------- Portfolio Content ------------------------------------------------*/
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+
+        .text {
+            background-color: none;
+            color: black;
+            font-size: 30px;
+            padding: 16px 32px;
+        }
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------ Make it Grid ----------------------------------------------------- */
+
+        *{
+            box-sizing: border-box;
+        }
+
+
+        .column {
+            float: left;
+            width: 50%;
+            padding : 10px;
+        }
+
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        .container {
+            position: relative;
+            width: 100%;
+        }
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+
+
+/* ------------------------------------------------ Paragraph style --------------------------------------------------------- */
+        h1{
+            font-size: 35px;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        }
+
+
+        p{
+            font-size: 18px;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            line-height: 35px
+        }
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------- Other specifics ---------------------------------------------- */
+        .info{ /* For the contact page, styling the text*/
+            padding: 50px 100px 100px 100px
+
+        }
+
+        .avocado{ /* For the avocado thingy */
+            display: block;
+            width: 18%;
+            margin-left: auto;
+            margin-right:auto;
+            margin-top: 70px
+        }
+
+
+
+
