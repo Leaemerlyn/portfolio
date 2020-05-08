@@ -119,7 +119,7 @@
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 30px;
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
         }
 
@@ -128,6 +128,11 @@
             font-size: 18px;
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             line-height: 35px
+        }
+
+        h3 {
+            font-size: 24px;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
         }
 /* -------------------------------------------------------------------------------------------------------------------------- */
 
