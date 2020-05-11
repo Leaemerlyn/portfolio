@@ -9,8 +9,93 @@
     <link rel="icon" href="https://cardadfar.github.io/stuco_webdev_website/assets/files/cool-icon.png">                    <!-- Insert Icon -->
     <script src="./Give Me a Title!_files/jquery.min.js"></script>
 </head>
+<style>
+    * {box-sizing:border-box}
+    body {font-family: Verdana,sans-serif;margin:0}
+    .mySlides {display:none}
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
 
 
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: black;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor:pointer;
+      height: 13px;
+      width: 13px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+</style>
 
 
 
@@ -30,12 +115,12 @@
     <div class= "main">
         <h1 style= "text-align: center; padding: 60px" > LEA EMERLYN</h1> 
 
-        <h2 style= "color: rgb(26,98,163)">Art in PUBLiC Space </h2>
-        <p style= "color: #505050"> Creating a platform for users to engage in conversations with each other and with artists </p> <br><br><br><br>
+        <h2 style= "color: rgb(26,98,163); line-height: 5px; padding-left: 130px">Art in PUBLiC Space </h2>
+        <p style= "color: #505050; padding-left: 130px"> Creating a platform for users to engage in conversations with each other and with artists </p> <br><br>
 
         <p><img style= 'width: 200px; float:left; margin-left: 100px' src= publicArt.png> </p>
 
-        <p style = "margin-left: 400px"> <br><br>
+        <p style = "margin-left: 400px; padding-right:100px"> <br><br>
         	<strong><span style= "color: rgb(26,98,163);"><u style= "color: rgb(26,98,163)">Group Mates:</u></span></strong> 
 			<span style=" color:#505050"> Michelle Lee, Michelle Tsang, Lauran Park, Yue (Carol) Jiang </span><br>
 
@@ -45,33 +130,559 @@
         	<strong><span style= "color: rgb(26,98,163);"><u style= "color: rgb(26,98,163)"> Duration:</u></span></strong>
 			<span style="color: #505050"> January 2020 — May 2020 </span><br>
 
-        	<strong><span style= "color: rgb(26,98,163);"><u style= "color: rgb(26,98,163)">Design Tools:</u></span></strong>
-			<span style="color: #505050"> Figma </span><br>
+        	<strong><span style= "color: rgb(26,98,163);"><u style= "color: rgb(26,98,163)">Tools:</u></span></strong>
+			<span style="color: #505050"> Figma, Mural, Zoom, Skype </span><br>
 
         	<strong><span style= "color: rgb(26,98,163);"><u style= "color: rgb(26,98,163)">Research Methods:</u></span></strong>
 			<span style="color: #505050"> Semi-Structured Interviews, Think-Aloud Protocols, Speed Dating, Experience Prototyping </span><br>
 
-        </p> <br><br><br><br><br><br><br><br><br>
+        </p> <br><br><br><br><br><br><br><br>
 
-        <h3 style= "color: rgb(26,98,163)">
-        	Executive Summmary
+
+        <h3 style= "color: rgb(26,98,163); letter-spacing: 6px; padding-left: 130px">
+        	EXECUTIVE SUMMARY
         </h3>
+        <p style="padding-right: 150px; padding-left: 130px">
+		Public art is meant to be readily accessible to everyone and increase livability within the city, yet one of the biggest issues that the public faces is that there are barriers preventing viewers from interacting with the art piece, leading the public to not converse about it with other viewers or seeking to give their feedback to artists. Here we present to you an interactive application using augmented reality to encourage users to physically go to the art site and unlock unique comments made by the artist and to interact with the piece by commenting and/or drawing on it. <br><br>
 
-        <p>
-        	Public art is meant to be readily accessible to everyone and increase livability within the city, yet one of the biggest issues that the public faces is that there are barriers preventing viewers from interacting with the art piece, leading the public to not conversing about it with other viewers orseeking to give their feedback to artists. Here we present to you an interactive application using augmented reality to encourage users to physically go to the art site and unlock unique commentsmade by the artist and to interact with the piece by commenting and/or drawing on it.
+		Before our project team came together as a group, each member researched the domain of public art and gathered findings in order to understand and define the problem. We narrowed down our problem space to focusing on the interaction from the viewers and artist’s perspective because we felt that they were two of the biggest stakeholders. The next step was to design the right product for the user. In order to do so, we needed to identify the users mental model of interacting with the art piece and the user’s needs in the public art realm through contextual interviews and speed dating. After synthesizing, we conducted usability testings to test and refine our prototype. <br><br>
 
+		Two interesting insights that we came up through the synthesis of our findings were that viewers seemed interested in interacting with the art piece but there wasn’t an available medium for that  and the viewer had a high threshold for talking about art.<br><br>
+
+		This presented us with the opportunity to fill this gap and provide an interactive platform with the following key features: 1) Explore page for uses to explore surrounding art pieces 2) the artifacts profile in which users can unlock facts about the art piece and communicate with the artist 3) users can draw on the art piece 4) the user’s profile. <br><br>
        	</p>
 
 
+       	<h3 style= "color: rgb(26,98,163); letter-spacing: 6px; padding-left: 130px"> 
+       	BACKGROUND
+       	</h3>
+       	<p style="padding-right: 150px; padding-left: 130px">
+		From previous research, we know that a primary reason for installing art in a city is that it increases the livability of a space. People can feel a sense of connectedness to the community as well as the city. It gives the city a landmark and people feel proud of living there. From the studies that we looked at, researchers were using level of engagement with the public art to measure how it can increase livability. Our team’s goal is to identify a problem space other than engagement. <br><br>
+
+		Before our team got together as a group, each of us tried to understand the current state of public art using data from previous research. We watched recordings of interviews, done experiential research and created stakeholder maps. We were able to generate insights, create Usability Finding Templates (UFTs) and Data Visualizations. <br><br>
+
+		The goal of the first team meeting was to identify a problem space that we want to research further. We conducted a Walk the Wall session and pinpointed common themes among our data. Here are the common themes:<br>
+       	</p>
+
+       	<img style= 'width: 49%;' src= WTW1.png>
+       	<img style= 'width: 49%;' src= WTW2.png> <br> <br><br>
+
+       	<h3 style= "font-size: 20px; padding-left: 130px">
+       	Key takeaways from the Walk the Wall session: 
+        </h3>
+
+
+       	<!-- <p><img style= 'height: 600px; float:left; padding-left: 50px; padding-right: 50px' src= WTW3.png> </p>  -->
+        <p style="padding-right: 150px; padding-left: 130px">
+        	1. Storytelling is important for a viewer because it shows the significance of an art piece and allows them to understand its purpose. Many times, it is difficult for viewers to find information about the artwork. <br><br>
+
+			2. It is interesting if we can provide a platform for communal engagement, like everyone can be a creator for public art pieces. Perhaps during the creation of the artwork, the general public can contribute to the final outcome. <br><br>
+
+			3. Art pieces can be dynamic and attract more users to interact with them. By dynamic, we mean that the artwork can physically move or engage the viewers in some way. Many artworks we have seen are static, which many people find boring because there is nothing to do other than looking at it. <br><br>
+
+			4. There can be more interactions using mobile applications. The mobile apps that we explored are not very developed. We think that mobile apps might increase interactions between viewers and the art. <br><br>
+
+			5. People need low user threshold and high attraction grabbing to separate public arts from the environment.<br><br><br>
+        </p>
+
+        
+        <h3 style= "font-size: 20px; padding-left: 130px">
+       	Reframing Activity
+        </h3>
+
+        <p style="padding-right: 150px; padding-left: 130px">
+        	Our team also chose to do a reverse assumption activity in order to identify a problem space that we were interested in. 
+        </p>
+
+        <p><img style= 'width: 70%; padding-left: 50px; padding-right:50px; display: block; margin-left: auto; margin-right: auto' src= reverseAssumption.png> </p>
+        <p style="padding-right: 150px; padding-left: 130px">
+        	<br><br>
+        	The assumption that we were most interested in is “public art is only created by artists,” and its opposite “public art can be created by anyone.” This lead us to our problem space/project definition:<br><br>
+			
+			How might we encourage an active feedback loop between artist and the public during the creation of public art?<br><br>
+			
+			We thought that this also ties into representation in public art. Because the general public is allowed to have a voice in the creation process, it ensures that public art is representative of the people. Then we conducted semi-structured interviews and found insights that were less related to this problem space and more towards fostering communication. This led us to reframe and narrow our project definition to: How might we encourage the communication between artists and viewers as well as viewers and viewers?<br><br><br>
+
+        </p>
+
+        <h3 style= "color: rgb(26,98,163); letter-spacing: 6px; padding-left: 130px"> 
+       	PROBLEM
+       	</h3> 
+
+       	<p style= "text-align: center; font-size: 20px; padding-left: 200px; padding-right: 200px; padding-top: 50px; padding-bottom: 50px">
+			<strong> How Might We Encourage the Communication Between Artists and Viewers as well as Viewers and Viewers? </strong>
+       	</p>
+
+        <h3 style= "font-size: 20px; padding-left: 130px">
+       	Why does this matter?
+        </h3>
+
+        <p>
+			The current state of public art has a problem: The intention of public art contradicts the reality of its experience. <br><br>
+
+			The intention is that we see public art as something anyone can enjoy. There is no fee, no time limit and no barriers to enjoy public art. In other words, there is a low threshold of entry. However, the reality is that people think art has a high threshold of entry. People think that there are barriers between them and public art, which are preventing them from talking about public art with one another. The three barriers that we identified are: Prior Knowledge, Proximity, Privacy <br><br>
+
+        </p>
+        
+        <h3 style= "font-size: 20px; padding-left: 130px">
+       	Prior Knowledge
+        </h3>
+		<p>
+        	We found that people thought that they needed background knowledge to talk about public art with one another. They think that they need to be of a certain intellect or class to talk about it. These people also did know any suitable platform they can use to learn more about the art. <br><br>
+        </p>
+
+        <h3 style= "font-size: 20px">
+       	Proximity
+        </h3>
+		<p>
+        	People confine their experience with public art to when they were proximally close the art piece. The experience of public art ends whenever they leave the site. They will not talk about it with others unless they are at the site. During their daily lives, people will not talk about public art because they are not physically close to it. <br><br>
+        </p>
+
+        <h3 style= "font-size: 20px;">
+       	Privacy
+        </h3>
+		<p>
+        	We saw that people thought that their art experience was a private and individual experience. They thought that they did not want their interpretations of the artwork to be influenced by others’ interpretations. <br><br>
+        </p>
+
+        <h3 style= "color: rgb(26,98,163); letter-spacing: 6px"> 
+       	METHODS
+       	</h3> 
+
+       	<h3 style= "font-size: 20px;">
+       	Semi-structured interviews
+        </h3>
+
+        <p>
+        	We went into the semi-structured interviews with our original problem space: How might we encourage an active feedback loop between artists and the public during the creation of public art. We recruited five viewers of public art and one artist. After every session, we held an interpretation session. <br>
+        </p>
+
+        <p style= "font-size: 17px">
+       	<u>Key Insights</u>
+        </p>
+
+         <p>
+        	1. The topic of public art has a perceived certain threshold that allows people to engage with or talk about it.<br>
+        	2. The level of exposure to public art is influenced by people’s daily routines. We observed that the measure of how often one views public art is dependent on where people go on a daily basis.<br>
+        	3. We found that people enjoy novel interactions with public art. Our users think that public art should be more than a simple painting. It should be more dynamic rather than static and be creative with the medium/container of the artwork.<br>
+        </p>
+
+        <p style= "font-size: 17px">
+       	<u>Quotes:</u>
+        </p>
+
+       	<p>
+       	“I don’t feel comfortable talking about public art unless I know something about it”<br><br>
+       	“I would only talk about the piece with someone else if we’re near it.”<br><br>
+        </p>
+
+        <p style= "font-size: 17px">
+        <u>Affinity Diagram</u>
+        </p>
+
+        <p>
+        Here is the link to the mural page for the full diagram: <a href= " https://app.mural.co/t/ucre20202802/m/ucre20202802/1586111183110/52a7b715f91de23742152521d45940107c7a7927" target= "_blank">Affinity Diagram</a>
+        </p>
+
+        <img style= 'width: 90%; display: block; margin-right:auto; margin-left: auto' src= affinityDiagram.png><br>
+
+
+        <h3 style= "font-size: 20px">
+       	Think Aloud Protocols 
+        </h3>
+         <p>
+        	We used James Simon’s website to test the functionality and usability of the site. We were curious to see what viewers wanted to see in a website and how the experience can be improved for them. <br><br>
+
+        	As a group, we created 9 UFTs. Feel free to look through them: 
+        </p>
+
+            <div id="slideshow1" class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="uft1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="uft2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="uft3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="uft4.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="uft5.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="uft6.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="uft7.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="uft8.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="uft9.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+              <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+              <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+              <span class="dot" onclick="currentSlide(4, slideshow1)"></span> 
+              <span class="dot" onclick="currentSlide(5, slideshow1)"></span> 
+              <span class="dot" onclick="currentSlide(6, slideshow1)"></span> 
+              <span class="dot" onclick="currentSlide(7, slideshow1)"></span> 
+              <span class="dot" onclick="currentSlide(8, slideshow1)"></span> 
+              <span class="dot" onclick="currentSlide(9, slideshow1)"></span> 
+            </div>
+            </div>
+
+       	<p style= "font-size: 17px">
+       	<br><br>
+       	<u>Key Insights</u>
+        </p>
+
+         <p>
+        	1. It was difficult for the user to browse through the art pieces, making it hard to identify a specific art piece and related art pieces.<br><br>
+        	2. Users couldn’t easily identify the location of the art pieces.<br><br>
+        	3. Users find it hard to understand art pieces without knowing the contexts of art pieces.<br>
+        </p>
+
+        <p style= "font-size: 17px">
+       	<u>Quotes:</u>
+        </p>
+
+        <p>
+        "There must be a search bar. I can’t believe I need to hover over every piece."<br><br>
+        "The most important information about a piece of public art is its location. How would people interact with it if they don’t even know where it is?"<br>
+        </p>
+
+       	<p style= "font-size: 17px">
+       	<u>Suggestions for actions to take:</u>
+        </p>
+
+        <p>
+		1. Provide a filter and sort system to personalize the users’ interests and help them identify art pieces that they probably like, so that they would be more willing to talk/contribute their thoughts on art pieces.<br>
+		2. Provide clear labeling of titles besides artwork images so that users do not need to hover their mouse to identify them<br>
+		3. Implement real-time ETA to the art piece based on user’s location <br>
+		4. Or include a short, concise address with an interactive map on the site <br>
+		5. Provide thorough information about the art piece and segment them into different pieces so that users are able to select information they are interested in to get to know art pieces.<br>
+		6. Provide a communication tunnel for viewers and they are able to ask questions on the page if any information they would like to know is lacking on the website. <br>
+		7. Include a frequently asked page/tab for the artwork.<br><br>
+        </p>
+
+        <h3 style= "font-size: 20px">
+       	Speed Dating 
+        </h3>
+
+        <p>
+		    Each of us created one scenario for the speed dating session. Every scenario has three story boards. Each storyboard for the scenarios gets progressively more risky so that we can test the limits of the users. Here are the storyboards that we created:
+        </p>
+
+
+          <div id="slideshow2" class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 12</div>
+            <img src="sb1.png" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 12</div>
+            <img src="sb2.png" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 12</div>
+            <img src="sb3.png" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 12</div>
+            <img src="sb4.png" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 12</div>
+            <img src="sb5.png" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 12</div>
+            <img src="sb6.png" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 12</div>
+            <img src="sb7.png" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 12</div>
+            <img src="sb8.png" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 12</div>
+            <img src="sb9.png" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">10 / 12</div>
+            <img src="sb10.png" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">11 / 12</div>
+            <img src="sb11.png" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">12 / 12</div>
+            <img src="sb12.png" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
+            <span class="dot" onclick="currentSlide(2, slideshow2)"></span> 
+            <span class="dot" onclick="currentSlide(3, slideshow2)"></span> 
+            <span class="dot" onclick="currentSlide(4, slideshow2)"></span> 
+            <span class="dot" onclick="currentSlide(5, slideshow2)"></span> 
+            <span class="dot" onclick="currentSlide(6, slideshow2)"></span> 
+            <span class="dot" onclick="currentSlide(7, slideshow2)"></span> 
+            <span class="dot" onclick="currentSlide(8, slideshow2)"></span> 
+            <span class="dot" onclick="currentSlide(9, slideshow2)"></span> 
+            <span class="dot" onclick="currentSlide(10, slideshow2)"></span> 
+            <span class="dot" onclick="currentSlide(11, slideshow2)"></span> 
+            <span class="dot" onclick="currentSlide(12, slideshow2)"></span> 
+          </div>
+          </div>
+
+
+        <p style= "font-size: 17px">
+       	<u>Findings and Insights:</u>
+        </p>
+
+        <p>
+		The main concern for users when interacting with the artist or artist’s work were <br>
+			1. Their privacy information <br>
+			2. Enjoyability when interacting<br><br>
+
+			<u>User's Needs:</u><br>
+			1. Users need privacy, otherwise they prefer not to participate <br>
+			2. Users need useful visual and contextual information delivered in a non-intrusive medium<br>
+			3. Users need to feel creatively empowered in order to engage<br>
+			4. Users prefer an efficient way to directly contact the artist<br>
+			5. Users prefer both ways of drawing and writing to encourage all users to express their ideas<br>
+        </p>
+
+        <p style= "font-size: 17px">
+       	<u>Quotes:</u>
+        </p>
+
+        <p>
+        “I like this scenario because it feels like a game and it makes me want to explore.”<br><br>
+        “I would use the drawing function because it gives people something fun to do around the art.”<br>
+        </p>
+
+        <p style= "font-size: 17px">
+       	<u>Design Ideas and Opportunities</u>
+        </p>
+
+        <p>
+        	1. Users seem to prefer increasing receptivity to creativity<br>
+			2. People are more willing to learn information that are scaffolded for them.<br>
+			3. People care about personal information and it is an opportunity to create interfaces that protect their privacy data.<br>
+			4. People are interested in interacting with art pieces and they are willing to draw or write to actively interact with art pieces.<br>
+			5. Including relevant information about the artwork<r>
+			6. People will not communicate actively about public art. We need to reduce user effort in communication. Moreover, we can also increase their motivation of communication by providing interactive experience or receiving positive feedback from artists.<br>
+			7. Artifacts (Games, art boards) around the art can be a gateway to motivate users to communicate with artist<br>
+
+        </p><br>
+
+        <h3 style= "color: rgb(26,98,163); letter-spacing: 6px;"> 
+       	IMPLICATIONS/SOLUTIONS	
+       	</h3> 
+
+        <p>
+ 		After conducting various research, we decided that we want to create an app that allows users to communicate with others. The app will also give users a personalized experience while viewing the art. <br>
+        </p>
+
+        <h3 style= "font-size: 20px">
+       	Features
+        </h3>
+
+        <p>
+ 		1. AR camera.
+        </p>
+        
+        <p style= "padding-left: 180px">
+ 			a. Allows users to scan art pieces to view interesting facts <br>
+ 			b. Facts are clickable to allow users to comment under them <br>
+			c. Take a picture and draw/add icons to share with others <br>
+			d. Value — Opportunity to contribute in discussion among viewers and artists by expressing creatively and commenting shared in a common space of public art interest <br>
+        </p>
+
+        <p>
+ 		2. Explore for More
+        </p>
+
+        <p style="padding-left:180px">
+      a. Allows users navigate art pieces and learn more information by searching through different categories <br>
+			b. Locked Information: Can only view artist’s facts, and others’ drawings by personally visiting artwork site first<br>
+			c. Can contact the artist by sending messages directly <br>
+			d. Value — Motivates people to join a community by actively viewing a piece, Addresses need for instant communication tool between viewers and artists <br>
+        </p>
+
+        <p>
+ 		3. Social Platform
+        </p>
+
+        <p style="padding-left: 180px">
+      a. Allows users to comment on fun facts of art piece when they are viewing it in person<br>
+			b. Provides an open space for viewers and artists to express their thoughts <br>
+			c. Value — Motivates people to communicate more with each other, Reducing the threshold of viewing and talking about art pieces<br><br>
+        </p>
+
+
+        <p>
+          Here is what our first iteration looked like:
+        </p>
+
+        <img src="1iteration1.png" width= 24%>
+        <img src="1iteration2.png" width= 24%>
+        <img src="1iteration3.png" width= 24%>
+        <img src="1iteration4.png" width= 24%>
+
+
+        <h3 style= "font-size: 20px">
+       	Experience Prototyping
+        </h3>
+        <p>
+    	We created the prototype using Figma and tested the usability of the app with several users.<br>
+        </p>
+
+        <p style= "font-size: 17px">
+       	<u>Insights and Findings:</u>
+        </p>
+       
+       	<p>
+    		1. Users thought that this application was highly interactive because they had to physically go to the art piece in order to reveal information <br>
+			2. Users want to have cleaner screens and all the interactions are easy to understand <br>
+			3. Users enjoyed the collection based structure of the application <br>
+			4. Users thought the search icon was redundant <br>
+			5. Users wanted to know their location respective to the art piece <br>
+			6. Users believed that the locked “Facts and Drawings” meant that they would have to unlock them through a premium subscription <br>
+			7. Users believe that reacting and liking facts about the art piece are unnecessary; they degrade factual information and makes the app feel more like social media, which distracts from understanding the value of art by rating pieces of information <br>
+        </p>
+
+        <p style= "font-size: 17px">
+       	<u>Quotes:</u>
+        </p>
+
+        <h3 style= "font-size: 18px;">
+       	Changes made for second iteration:
+        </h3>
+
+        <p>
+			1. Search icon → Navigation icon
+        </p>
+      
+        <p style="padding-left:180px">
+			Rationale: Users thought that the search icon was used to look for images and not for navigating
+        </p>
+
+        <p>
+			2. Made the comments on the art piece look more clickable 
+        </p>
+      
+        <p style="padding-left: 180px">
+			Rationale: Users didn’t know that the comments were clickable 
+        </p>
+
+        <p>
+			3. Included a marker for user location
+        </p>
+      
+        <p style="padding-left: 180px">
+			Rationale: Users would like to know where they are in relation to the art pieces
+        </p>
+
+        <h3 style= "font-size: 20px">
+        Second Iteration:
+        </h3>
+        <p>
+          Here is the link to the prototype in Figma: <a href= " https://www.figma.com/file/N4VnfEXR3wjVLXduQvp1G9/Model---UCRE?node-id=290%3A172&viewport=-4944%2C1156%2C0.5503365397453308" target= "_blank">Prototype</a>
+        </p>
+        <img src="2iteration1.png" width= 24%>
+        <img src="2iteration2.png" width= 24%>
+        <img src="2iteration3.png" width= 24%>
+        <img src="2iteration5.png" width= 24%>
+        <img src="2iteration6.png" width= 24%>
+        <img src="2iteration4.png" width= 24%>
+        <img src="2iteration7.png" width= 24%>
+
+        <h3 style= "color: rgb(26,98,163); letter-spacing: 6px;"> 
+        REFLECTION
+        </h3> 
 
     </div>
 
 
-
-
-
-
     <script>
+var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+  
+
+
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
     </script>  
 
 </body></html>
