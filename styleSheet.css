@@ -4,7 +4,7 @@
         .navBar {
             position: fixed;
             z-index: 1;
-            top: 100px;
+            top: 25%;
             left: 50px;
             background-color: none;
             max-height: calc(100% - 50px);
