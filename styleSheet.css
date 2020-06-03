@@ -50,8 +50,8 @@
             height: auto;
             transition: .5s ease;
             backface-visibility: hidden;
-            width: 530px;
-            height: 300px;
+/*            width: 520px;
+            height: 330px;*/
 
         }
 
@@ -140,11 +140,33 @@
         }
 
         h3 {
-            font-size: 26px;
+            font-size: 30px;
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             padding-left: 130px;
             padding-right: 150px;
         }
+
+        h4{
+            font-size: 24px;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            padding-left: 130px;
+            padding-right: 150px;  
+        }
+
+        ul {
+            font-size: 15px;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            line-height: 30px;
+/*            padding-right: 150px;*/
+        }
+
+        ol{
+            font-size: 15px;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            line-height: 30px;
+            padding-right: 150px;  
+        }
+
 
 
 /* -------------------------------------------------------------------------------------------------------------------------- */
