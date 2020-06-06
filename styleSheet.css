@@ -35,7 +35,6 @@
             margin-left: 180px;
             padding-left: 50px;
             padding-right:10px;
-            padding-bottom: 50px;
         }
 
 /* ---------------------------------------------------------------------------------------------------------------------*/
@@ -120,13 +119,15 @@
 
 /* ------------------------------------------------ Paragraph style --------------------------------------------------------- */
         h1{
-            font-size: 35px;
+            font-size: 36px;
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            line-height: 50px;
         }
 
         h2 {
-            font-size: 34px;
+            font-size: 33px;
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            margin-top: 0px;
         }
 
 
@@ -136,7 +137,6 @@
             line-height: 30px;
             padding-left: 130px;
             padding-right: 150px;
-
         }
 
         h3 {
@@ -165,6 +165,16 @@
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             line-height: 30px;
             padding-right: 150px;  
+        }
+
+        a{
+            color: #2E3192;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #96A3BA;
+            cursor: pointer;
         }
 
 
