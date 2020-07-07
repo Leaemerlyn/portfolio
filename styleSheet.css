@@ -139,6 +139,8 @@
             font-size: 33px;
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             margin-top: 0px;
+            padding-left: 130px;
+            padding-right: 150px;
         }
 
 
@@ -251,6 +253,8 @@
                 font-size: 24px;
                 font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
                 margin-top: 0px;
+                padding-left: 10px;
+                padding-right: 10px;
             }
 
             h3 {
