@@ -209,7 +209,7 @@
         }
 
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 600px) {
             .navBar {
                 width: 100%;
                 height: auto;
