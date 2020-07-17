@@ -53,16 +53,6 @@ img {vertical-align: middle;}
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: black;
-  font-size: 12px;
-  padding: 10px 10px;
-  margin-top: 420px;
-  position: absolute;
-  top: 0;
-}
-
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -86,8 +76,18 @@ img {vertical-align: middle;}
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
   .prev, .next,.text {font-size: 11px}
+
+  .slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  float: left;
+  padding-left: 0px;
+  margin-right: 0px;
+}
+
 }
 
 </style>
@@ -108,10 +108,14 @@ img {vertical-align: middle;}
 
 <div class = "main">
 <h1 style= "text-align: center; padding: 60px" > Lea Emerlyn</h1> 
-<h2 style= "color: #CE7645; line-height: 5px; padding-left: 130px"> Ballroom Public Relations </h2>
+<h2 style= "color: #CE7645;"> Ballroom Public Relations </h2>
 <p style= "color: #505050; padding-left: 130px"> Creating Graphic Designs for Ballroom Dance Club </p> <br><br>
 
-<p style = "margin-left: 400px; padding-right:100px"> <br><br>
+
+<section>
+<p> <img style = "width: 40%; float: left; padding-right: 5%;"src= "BallroomPR/prImage.png"></p>
+
+<p>
 <strong><span><u style= "color: #CE7645">Group Mates:</u></span></strong> 
 <span style=" color:#505050"> Individual work </span><br>
 
@@ -122,12 +126,14 @@ img {vertical-align: middle;}
 <span style="color: #505050"> April 2020 — Current </span><br>
 
 <strong><span><u style= "color:#CE7645">Tools:</u></span></strong>
-<span style="color: #505050"> Adobe Illustrator, Adobe Photoshop </span><br>
+<span style="color: #505050"> Adobe Illustrator, Adobe Photoshop </span>
+</p>
 
-</p> <br><br><br><br><br><br><br><br>
+</section>
 
 
 <h3 style= "color: #CE7645; letter-spacing: 6px; padding-left: 130px">
+  <br>
 	INTRODUCTION
 </h3>
 
@@ -152,22 +158,11 @@ Our club’s banner has been hanging on its last threads since a semester ago, s
 
 I traced an image of a couple from our team dancing during a competition. The gray background and the Carnegie Mellon University logo is from our school’s official website. <br><br>
 
-<b>Improvements:</b>
+<b>Improvements:</b><br><br>
 
-<ol style= "margin-left: 50px">
-<ul>
-<li> I wish that I could add more detail to the dress as well as the suit. It currently looks very flat. At the time, I didn’t know how I could make wrinkles on clothes look natural. 
-</li>
-
-<li>
-The flowers on the dress are not as neat as I would have liked. I tried creating a brush with the flowers, but Adobe Illustrator does not allow me to create brushes that have a gradient. I just decided to place the larger flowers individually by copying and pasting. The smaller snowflakes were made with a brush and randomizing the size, rotation and spread. 
-</li>
-
-<li>
-Fingers… I’ll have to work on that a lot. 
-</li>
-</ul>
-</ol>
+- I wish that I could add more detail to the dress as well as the suit. It currently looks very flat. At the time, I didn’t know how I could make wrinkles on clothes look natural. <br><br>
+- The flowers on the dress are not as neat as I would have liked. I tried creating a brush with the flowers, but Adobe Illustrator does not allow me to create brushes that have a gradient. I just decided to place the larger flowers individually by copying and pasting. The smaller snowflakes were made with a brush and randomizing the size, rotation and spread.<br><br>
+- Fingers… I’ll have to work on that a lot. <br><br>
 </p>
 </section>
 
@@ -211,47 +206,38 @@ I wanted to keep things minimal for this poster. I like the navy blue contrast w
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 9</div>
   <img src="BallroomPR/shirt1.png" style="width: 100%">
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 9</div>
   <img src="BallroomPR/shirt2.png" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 9</div>
   <img src="BallroomPR/shirt3.png" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">4 / 9</div>
   <img src="BallroomPR/shirt4.png" style="width: 100%">
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">5 / 9</div>
   <img src="BallroomPR/shirt5.png" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">6 / 9</div>
   <img src="BallroomPR/shirt6.png" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">7 / 9</div>
   <img src="BallroomPR/shirt7.png" style="width: 100%">
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">8 / 9</div>
   <img src="BallroomPR/shirt8.png" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">9 / 9</div>
   <img src="BallroomPR/shirt9.png" style="width:100%">
 </div>
 
