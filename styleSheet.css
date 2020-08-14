@@ -1,4 +1,4 @@
-       
+
 /* --------------------------------------------- Vertical Navigation Bar --------------------------------------------------*/
 
         .navBar {
@@ -84,13 +84,12 @@
         .text {
             background-color: none;
             color: black;
-            font-size: 30px;
-            padding: 16px /*32px*/;
+            font-size: 2vw;
+            padding: 10%;
         }
 
         .des {
-/*            top: 10%;*/
-            font-size:14px;
+            font-size:1vw;
         }
 
 /* ------------------------------------------------------------------------------------------------------------------------- */
@@ -164,21 +163,7 @@
             font-size: 24px;
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             padding-left: 130px;
-            padding-right: 150px;  
-        }
-
-        ul {
-            font-size: 15px;
-            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-            line-height: 30px;
-/*            padding-right: 150px;*/
-        }
-
-        ol{
-            font-size: 15px;
-            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-            line-height: 30px;
-            padding-right: 150px;  
+            padding-right: 150px;
         }
 
         a{
@@ -214,20 +199,17 @@
         @media screen and (max-width: 600px) {
             .navBar {
                 width: 100%;
-/*                height: auto;*/
                 position: relative;
                 left:0px;
-
                 }
 
             .navBar a {
-/*                float: left;*/
                 text-align: center;
                 float: none;
                 font-size:12px;
                 padding: 5px 5px 5px 5px;
                 }
-            
+
             div.content {margin-left: 0;}
 
             .main {
@@ -235,6 +217,10 @@
                 padding-left: 0px;
                 padding-right:0px;
                 padding-bottom:50px;
+            }
+
+            .column{
+              width: 100%
             }
 
             p {
@@ -269,7 +255,7 @@
                 font-size: 17px;
                 font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
                 padding-left: 10px;
-                padding-right: 10px;  
+                padding-right: 10px;
             }
 
             ol{
@@ -296,8 +282,3 @@
 
 
     }
-
-
-
-
-
