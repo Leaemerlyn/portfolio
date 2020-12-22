@@ -1,107 +1,96 @@
-<!DOCTYPE html>
-<!-- saved from url=(0079)https://cardadfar.github.io/stuco_webdev_website/assets/files/html_starter.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lea's Portfolio</title>                           <!-- Give Title -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="styleSheet.css">  <!-- Insert StyleSheet -->
-    <link rel="icon" href="https://cardadfar.github.io/stuco_webdev_website/assets/files/cool-icon.png">                    <!-- Insert Icon -->
-    <script src="./Give Me a Title!_files/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href= "Assets/stylesheet.css" type= "text/css" rel= "stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Lea's Projects</title>
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="Assets/index/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active px-4">
+              <a class="nav-link" href="index.html">Projects</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="art.html">Art</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
 
-</head>
+    <div id="intro-row" class="container-fluid no-padding">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div id="logo-name">
+            <p id="name">LEA EMERLYN</p>
+            <img id= "large-logo" class= "img-responsive fit-image" src="Assets/index/large-logo.png" alt="logo">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <p class="text-center intro-text"> Junior at Carnegie Mellon University. <br>UX Designer/Researcher</p>
+          <div class="row justify-content-center"><a id="dive-in-button" class="btn mx-auto" role="button" href="index.html#project-list">Dive In</a></div>
+        </div>
+      </div>
+    </div>
 
+    <div id="project-list" class="row project-list"> <!--All projects-->
+      <div class="col-lg-6"> <!--project 1-->
+          <div class="card mb-3 card-style">
+            <div class="row no-gutters py-3 px-3">
+              <div class="col-4">
+                <img src="Assets/index/15-minutes.png" class="card-img" alt="15-minutes">
+              </div>
+              <div class="col-8 d-flex align-items-center">
+                <div class="card-body">
+                  <h3 class="card-title">15 Minutes</h3>
+                  <p class="card-text">App to help people work on their long term goals</p>
+                  <p class="card-text"><small class="text-muted">UX | UI | Hackathon</small></p>
+                  <a class="btn" role="button" href="15-minutes.html">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
 
-<body data-gr-c-s-loaded="true" style ="background-color: rgb(244,244,245)">
+      <div class="col-lg-6"><!--project 2-->
+          <div class="card mb-3 card-style">
+            <div class="row no-gutters py-3 px-3">
+              <div class="col-4">
+                <img src="Assets/index/public-art.png" class="card-img" alt="Public Art">
+              </div>
+              <div class="col-8 d-flex align-items-center">
+                <div class="card-body">
+                  <h3 class="card-title">PUBLiC</h3>
+                  <p class="card-text">Building an interactive public art experience</p>
+                  <p class="card-text"><small class="text-muted">UX | UI </small></p>
+                  <a class="btn" role="button" href="public.html">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
 
-<style>
-    h2, p {
-       margin: 0;
-    }
-</style>
-
-
-	<div class = "navBar">
-		<a href= "index.html"> <span style= "color: black;">ABOUT </span></a>
-	    <a href= "researchProjects.html"> PROJECTS </a>
-        <a href= "artWorks.html"> ARTWORKS</a>
-    	<a href= "resume.html"> RESUME </a>
-		<a href= "contact.html"> CONTACT </a>
-	</div>
-
-    <div class= "main">
-
-    <img style = " width: 30%; float: left; padding-top: 2%; padding-right: 50px" src= images/Dance.png>
-
-    <h1 style= 'padding-top: 5%;'> Hello! I'm Lea Emerlyn. <br> I <span style= "color:#95CD8B;">research,</span> <span style= "color:#F6967D;">design,</span> and <span style= "color: #6F8ECC;">code(sort of)</span></h1>
-
-	<hr style="width:100px;text-align:left;margin-left:0;" >
-
-<!--
-    <p class= "main" style= 'text-align: left; padding-right: 10%'>
-    		<br><br>
-
-            Hello! I am a junior at Carnegie Mellon University with a double major in Human Computer Interaction and Business. I hope to be a UX/UI designer and researcher in the future. Feel free to take a look at the projects I have worked on so far.
-
-            (I coded this website myself and I am still working on this portfolio site. Soon, the projects page will populate with more details.)
-            <br><br>
-    </p> -->
-
-    <h4 style= 'text-align: left; padding-right: 10%'>
-        In a nutshell
-    </h4>
-
-    <p>
-        <span style= "color: #333132">I am a junior at Carnegie Mellon University double majoring in human-computer interaction and business. I look forward to becoming a full time UX/UI designer and researcher. Currently, I work at the Human Computer Interaction Institute at CMU as a research assistant. Feel free to take a look at some of the projects I have worked on. <br><br>
-
-        I am a self-taught designer, and I learned how to use several design softwares through free online courses and applying the concepts in my personal projects. In my spare time, I also enjoy learning how to code in HTML/CSS.<br><br>
-
-        P.S. I coded this portfolio on my own with the help of <a href= "https://www.w3schools.com/" target= _blank>w3schools.com</a> and stackoverflow. I am deeply sorry if it looks a little broken on your screen resolution. I swear it looked decent on my 13 inch macbook. :)
-        </span>
-
-    </p>
-
-
-    <h4 style= 'text-align: left; padding-right: 10%'>
-        You can talk to me about
-    </h4>
-
-    <p> <span style= "color:#E7685D"><b>Art </b></span><br>
-        <span style= "color: #333132">I've always been doodling, and all I use is an HB pencil and a piece of white paper. When I was 19, I purchased Adobe’s Creative Cloud subscription and started using Illustrator and Photoshop. I didn’t have any prior experience with graphics or design, so I simply googled “illustrator tutorials,” and learned from free videos. I'm still learning how to use these softwares, but feel free to take a look at <a href= artwork.html>my work</a>. <br><br></span>
-
-        <span style= "color: #57744B"><b>Dancing</b></span><br>
-        <span style= "color: #333132">I tried joining several dance organizations in CMU, but because I didn’t have any prior dance experience, none of the clubs would take me. I remembered how I kept seeing posters for the <a href= "http://www.cmubdc.org/" target= _blank>Ballroom Dance Club</a>, so I decided to give it a try. I was elected as the events coordinator my sophomore year and the public relations chair my junior year. <br><br></span>
-
-        <span style= "color: #00BBD6"><b>Events Planning </b></span><br>
-        <span style= "color: #333132">I was the events coordinator for the Ballroom Dance Club, and I organized team bonding activities such as apple picking, dumpling parties, end of year formal (Scotch Ball). I like to have fun and have things planned out wayyy ahead of time. <br><br></span>
-
-        <span style= "color: #ED1C24"><b>Traveling</b></span><br>
-        <span style= "color: #333132">My family never went on a family vacation before, but I got enough scholarships that allowed me to study abroad twice. I went to Santiago, Dominican Republic in high school to study Spanish. During the summer of my freshman year of college, I went to Prague, Czech Republic to study Business and to intern at <a href="https://rossum.ai/" target= _blank>Rossum</a>. <br><br></span>
-
-        <span style= "color: #336633"><b>Wrestling</b></span><br>
-        <span style= "color: #333132">I joined the wrestling team at Brooklyn Technical High School because I’ve always been interested in martial arts, and I wanted to make some friends. I did not have any experience in wrestling, and was very embarrassed at how bad I was in the beginning. I joined the team as a junior, and stuck with it through senior year. I competed in both the boy’s team and the girls team. By senior year, I was captain of the girl’s team and second place in the city. <br><br></span>
-
-        <span style= "color: #3E7B7D"><b>Music</b></span><br>
-        <span style= "color: #333132">I started playing the piano, flute, violin, viola and clarinet when I was in sixth grade. There was a free after school program called Smart Arts at my middle school, and I was able to learn different instruments from that program. My teachers were probably annoyed that I switched all the time :). When I got to high school, I continued to play the <a href= "https://www.youtube.com/watch?v=c2kuTmkOg3Q" target= _blank>flute</a> for an additional four years.<br><br></span>
-
-        <span style= "color: #B14A5D"><b> Community Service </b></span><br>
-        <span style= "color: #333132">Although I don’t do much of it now, I am always looking for ways I can get involved in community service. In high school, I did over 200 hours of community service. Last winter break, I volunteered for <a href= "https://www.habitat.org/" target= _blank>Habitat For Humanities</a> in Florida.</span><br><br>
-
-    </p>
-
-    <h4> Let's Get in Touch!</h4>
-    <pre style= "font-size: 14px"><a href= "mailto:leas@andrew.cmu.edu">leas@andrew.cmu.edu</a>            <a href= "https://www.linkedin.com/in/lea-emerlyn-7b8170168/" target= _blank> LinkedIn</a> </pre>
-
-
-
-
-
-</div>
-
-    <script>
-    </script>
-      <!-- Insert JQuery Script -->
-
-
-
-</body></html>
+    <script src="Assets/Libraries/anime.min.js"></script>
+    <script src="Assets/button.js"></script>
+    <script src="Assets/bubbles.js"></script>
+    <script src="Assets/gradient.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
