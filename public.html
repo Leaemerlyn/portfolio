@@ -15,7 +15,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="back" href="index.html"> Back</a>
+      <a id="back" class="back" href="index.html"> Back</a>
     
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
@@ -65,7 +65,7 @@
 
       <div class="row my-5"> 
         <div class="col-md-4">
-          <h4 class="text-center section-title"> Understanding the Problem </h4>
+          <h4 class="text-center section-title"> UNDERSTANDING THE PROBLEM</h4>
         </div>
         <div class="col-md-8">
           <p>From previous research, we know that a primary reason for installing art in a city is that it increases the livability of a space. 
@@ -78,12 +78,13 @@
         </div>
       </div>
 
-      <div class="row">
-        <img class="img-fluid img-responsive" src="Assets/Projects/Public/journeyMap.png" alt="Journey Map">
-      </div>
-
-      <div class="row">
-        <img class="img-fluid img-responsive" src="Assets/Projects/Public/stakeholderMap.png" alt="Stakeholder Map">
+      <div class="row my-5 justify-content-center">
+        <div class="col-md-6 d-flex align-items-center"> 
+          <img class="img-fluid img-responsive hover-image image-modal" src="Assets/Projects/Public/journeyMap.png" alt="Journey Map">
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid img-responsive hover-image image-modal" src="Assets/Projects/Public/stakeholderMap.png" alt="Stakeholder Map">
+        </div>
       </div>
 
       <div class="row my-5 justify-content-center">
@@ -101,12 +102,12 @@
           </div>
         </div>
         <div class="col-md-7 d-flex align-items-center">
-          <img class="img-fluid img-responsive" src="Assets/Projects/Public/walkWall.png" alt="Walk the Wall">
+          <img class="img-fluid img-responsive hover-image image-modal" src="Assets/Projects/Public/walkWall.png" alt="Walk the Wall">
         </div>
       </div>
 
       <div class="row my-5 justify-content-center">
-        <div class="col-md-4 d-flex align-items-center">
+        <div class="col-md-5 d-flex align-items-center">
           <p> Our team also chose to do a reverse assumption activity in order to identify a problem space that we were interested in.
 
             We wanted allow the public to be able to participate in the creation of the artwork in some way. If the general public has a voice during the creation process, it ensures that public art is representative of the people.
@@ -114,8 +115,8 @@
             This lead to our problem:
             How might we encourage the communication between artists and viewers as well as viewers and viewers?</p>
         </div>
-        <div class="col-md-8 d-flex align-items-center">
-          <img class="img-fluid img-responsive" src="Assets/Projects/Public/reverse.png" alt="Reverse Assumption">
+        <div class="col-md-7 d-flex align-items-center">
+          <img class="img-fluid img-responsive hover-image image-modal" src="Assets/Projects/Public/reverse.png" alt="Reverse Assumption">
         </div>
       </div>
 
@@ -123,7 +124,7 @@
 
       <div class="row my-5">
         <div class="col-md-4">
-          <h4 class="text-center section-title">Defining the Problem</h4>
+          <h4 class="text-center section-title">DEFINING THE PROBLEM</h4>
         </div>
         <div class="col-md-8">
           <h5><strong>How Might We Encourage the Communication Between Artists and Viewers as well as Viewers and Viewers?</strong></h5>
@@ -172,7 +173,7 @@
 
       <div class="row my-5">
         <div class="col-md-4">
-          <h4 class="text-center section-title">Exploring Solutions</h4>
+          <h4 class="text-center section-title">EXPLORING SOLUTIONS</h4>
         </div>
       </div>
 
@@ -283,7 +284,7 @@
 
       <div class="row my-5">
         <div class="col-md-4">
-          <h4 class="text-center section-title">Finalizing Solution</h4>
+          <h4 class="text-center section-title">FINALIZING SOLUTIONS</h4>
         </div>
         <div class="col-md-8">
           <p>After conducting various research, we decided that we want to create an app that allows users to communicate with others. The app will also give users a personalized experience while viewing the art. We named this app PUBLiC. Here are some features:</p>
@@ -380,7 +381,7 @@
       
       <div class="row my-5">
         <div class="col-md-4">
-          <h4 class="text-center section-title">Reflection</h4>
+          <h4 class="text-center section-title">REFLECTION</h4>
         </div>
         <div class="col-md-8">
           <p>
@@ -407,9 +408,13 @@
         </div>
       </div>
 
+      <div id="modal" class="the-modal">
+        <img id="modalImage" class="modal-content">
+        <span id="close" class="close"> &times; </span>
+    </div>
     </div>
 
-
+    <script src="Assets/imageModal.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
