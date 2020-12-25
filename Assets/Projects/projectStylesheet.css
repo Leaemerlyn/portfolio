@@ -1,7 +1,6 @@
 * {
     font-family: 'Lato', sans-serif;
     color: white;
-    letter-spacing: 1px;
     font-weight: 300;
     line-height: 1.7;
 }
@@ -13,9 +12,9 @@ a, a:hover{
 
 strong{
     font-family: 'Lato', sans-serif;
-    color: white;
+    color: #ffffff;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 body{
@@ -162,6 +161,14 @@ hr{
 }
 
 /* Model Ends*/
+
+#publicReverseAssumption{
+    width: 70%;
+}
+
+#publicCrazy{
+    width: 70%;
+}
 
 @media only screen and (max-width: 767px) {
     .back{
