@@ -89,14 +89,6 @@ img {
     margin-right: auto;
 }
 
-#minute-embed{
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
-}
-
 hr{
     background-color:white;
     width: 50%;
@@ -168,6 +160,18 @@ hr{
 
 #publicCrazy{
     width: 70%;
+}
+
+#shoppingCrazy, #shoppingPaper{
+    width: 80%;
+}
+
+#minute-embed, #public-mid{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
 }
 
 @media only screen and (max-width: 767px) {
