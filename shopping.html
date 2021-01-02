@@ -59,7 +59,7 @@
             </div>
             <div class="row"> 
               <div class="col-4"><p> Methods:</p></div>
-              <div class="col-8"><p>Personas, Semi-Structured Interviews, Parallel Prototyping, Journey Mapping</p></div>
+              <div class="col-8"><p>Personas, Semi-Structured Interviews, Parallel Prototyping, Journey Mapping, Mobile-First Design</p></div>
             </div>
           </div>
       </div>
@@ -82,10 +82,13 @@
             <div class="col-md-8">
               A group shopping experience that allows housemates to shop asynchronously, yet together. 
               <ol>
-                  <li>Users can join different shopping carts</li>
-                  <li>Users shop for their own items</li>
+                  <li>Users can join multiple shopping carts</li>
+                  <li>Items in cart are separated by who added them. (Easy to figure out who bought what items)</li>
                   <li>Allow users to explore different recipes and ingredients</li>
               </ol>
+              <p><strong>Desktop:  </strong><a href="https://www.figma.com/file/5umzFtkcOnZkGU5FfFfUKR/P4?node-id=537%3A1747">https://www.figma.com/file/5umzFtkcOnZkGU5FfFfUKR/P4?node-id=537%3A1747</a><br>
+                <strong>Mobile:  </strong><a href="https://www.figma.com/file/5umzFtkcOnZkGU5FfFfUKR/P4?node-id=537%3A1747">https://www.figma.com/file/5umzFtkcOnZkGU5FfFfUKR/P4?node-id=537%3A1747</a>
+             </p>
             </div>
       </div>
 
@@ -160,8 +163,8 @@
           <h4 class="text-center section-title">DEFINING THE PROBLEM</h4>
         </div>
         <div class="col-md-8">
-          <p class="text-center"><strong>How might we bring the serendipitous feeling of in person shopping experience into the digital one? <br><br>
-            How might we make the grocery shopping experience feel more expedient and safe during a pandemic - especially as it pertains to households? </strong>
+          <p class="text-center">How might we bring the <strong>serendipitous feeling</strong> of in person shopping experience into the digital one? <br><br>
+            How might we make the grocery shopping experience feel more expedient and safe during a pandemic - <strong>especially as it pertains to households?</strong>
             </p>
         </div>
       </div>
@@ -209,9 +212,8 @@
 
           Key Takeaways
           <ol>
-            <li>Users brought up the idea of having multiple carts</li>
-            <li>Think that buying ingredients from recipes helps with meal planning</li>
-            <li>Users needed a way to know who is in their cart currently.</li>
+            <li>Users brought up the idea of having <strong>multiple carts</strong></li>
+            <li>Think that buying ingredients from  <strong>recipes</strong> helps with meal planning</li>
           </ol>
         </div>
       </div>
@@ -227,10 +229,134 @@
         </div>
       </div>
 
+      <div class="row my-5">
+        <div class="col-md-4">
+          <h5 class="text-center">Multiple carts</h5>
+        </div>
+        <div class="col-md-8">
+          <p>While designing the multiple carts feature, our main concern was that users might accidentally add items to the wrong cart. Users can easily add items to the wrong cart and not realize until much later. This means that they would then need to delete all the items, and re-add them to the correct cart. <br><br>
+
+            We decided we can prevent this error by making the name of the current cart visible at all times. This helps the user orient themselves while shopping and mitigates the chances of the user “slipping”.
+          </p>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <img class="img-fluid img-responsive hover-image image-modal" src="Assets/Projects/shopping/multipleCarts.png">
+      </div>
+
+      <div class="row my-5">
+        <div class="col-md-4">
+          <h5 class="text-center">Recipes Page</h5>
+        </div>
+        <div class="col-md-8">
+          <p>In our research, participants mentioned the hassles of meal planning as well as concerns about food waste. We came up with two different ideas for the recipes tab.<br><br>
+  
+            In “Recipe Idea A”, the customer inputs the recipes they want to try into the app. Then the app will recommend options from the store for any missing ingredients. This design would expedite the customer’s shopping experience and help get different items in front of customers.<br><br>
+
+            In “Recipe Idea B”, the user searches a database of recipes and selects ones that appeal to them. Then, the customer can add all items to the cart. This would make trying a new recipe quick and easy for customers, while boosting the store’s sales.
+          </p>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <img id="recipeIdeas" class="img-fluid img-responsive hover-image image-modal" src="Assets/Projects/shopping/recipeIdeas.png">
+      </div>
+
+      <div class="row my-5">
+        <div class="col-md-4">
+          <h5 class="text-center">Narrowing the Scope</h5>
+        </div>
+        <div class="col-md-8">
+         <p>We quickly realized that it wasn’t enough to rely solely on customers’ desire to try out new recipes if our goal is to help customers discover items that they might not usually consider. The solution was to make the application more proactive about putting new ingredients in front of customers by moving the recipes into the top of the cart page. This way, the recipes will be a focal point every time a customer views their cart.<br><br>
+
+          Another reason to migrate the recipes into the cart page is that we believe the recipe suggestions should be based upon the items that the customer has already added to their cart. By showing users recipes that use ingredients they were already planning to buy, they will be more inclined to try out one of the system’s recommendations.
+          </p>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <img id="narrowingScope" class="img-fluid img-responsive hover-image image-modal" src="Assets/Projects/shopping/narrowingScope.png">
+      </div>
+
+      <div class="row my-5">
+        <div class="col-md-4">
+          <h5 class="text-center">Refine, Refine, Refine</h5>
+        </div>
+        <div class="col-md-8">
+         <p>We were also beginning to consider some smaller interactions, such as how a customer may want to select substitutes for an ingredient for a recipe. The limited screen real estate on mobile devices is not conducive for displaying too much information all at once. We decided the best course of action would be to hide the options away in a drawer that opens and closes if the customer chooses to view them. This would eliminate confusion and save screen space.</p>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <img id="substitution" class="img-fluid img-responsive hover-image image-modal" src="Assets/Projects/shopping/substitution.png">
+      </div>
+
+      <div class="row my-5">
+        <div class="col-md-4">
+          <h5 class="text-center">Responsive Design </h5>
+        </div>
+        <div class="col-md-8">
+          <p>Up until this point in the process, we had been focused on a mobile-first approach, designing primarily for the experience of a handheld device. However, we felt that our design was solidified enough to start thinking about how the application might look like on larger screens, as well as the contexts of use.<br><br>
+
+            Translating our mobile designs to desktop came with its own set of challenges. We had to be mindful of maintaining a reasonable hierarchy among the visual elements in our design and consider the most important actions for the customers on various devices. For instance, while a customer’s primary goal on mobile would most likely be to checkout and pay, the same customer would probably use the desktop application to browse. So we chose to make the recipe cards large on the desktop experience to encourage customers to explore and experiment, while the same recipe cards are smaller in scale on mobile. 
+            </p>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <img id="responsive" class="img-fluid img-responsive hover-image image-modal" src="Assets/Projects/shopping/responsive.png">
+      </div>
+
+      <hr>
+
+      <div class="row my-5">
+        <div class="col-md-4">
+          <h4 class="text-center section-title">FINAL HI-FI PROTOTYPE</h4>
+        </div>
+        <div class="col-md-8">
+          <p><strong>Desktop:  </strong><a href="https://www.figma.com/file/5umzFtkcOnZkGU5FfFfUKR/P4?node-id=537%3A1747">https://www.figma.com/file/5umzFtkcOnZkGU5FfFfUKR/P4?node-id=537%3A1747</a><br>
+             <strong>Mobile:  </strong><a href="https://www.figma.com/file/5umzFtkcOnZkGU5FfFfUKR/P4?node-id=537%3A1747">https://www.figma.com/file/5umzFtkcOnZkGU5FfFfUKR/P4?node-id=537%3A1747</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-lg-7 embed-responsive embed-responsive-4by3">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F5umzFtkcOnZkGU5FfFfUKR%2FP4%3Fnode-id%3D525%253A684%26viewport%3D-87%252C490%252C0.17446604371070862%26scaling%3Dscale-down" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-5 embed-responsive embed-responsive-4by3"> 
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F5umzFtkcOnZkGU5FfFfUKR%2FP4%3Fnode-id%3D537%253A1893%26viewport%3D469%252C537%252C0.2511104643344879%26scaling%3Dscale-down" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-lg-6 embed-responsive embed-responsive-4by3">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5umzFtkcOnZkGU5FfFfUKR%2FP4%3Fnode-id%3D495%253A2" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-6 embed-responsive embed-responsive-4by3"> 
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5umzFtkcOnZkGU5FfFfUKR%2FP4%3Fnode-id%3D537%253A1747" allowfullscreen></iframe>        </div>
+      </div>
+
+      <hr>
+
+      <div class="row my-5">
+        <div class="col-md-4">
+          <h4 class="text-center section-title">REFLECTION</h4>
+        </div>
+        <div class="col-md-8">
+          <p>If we expanded on our prototype, we could dive deeper into the idea of ingredient recommendations and suggested substitutions and think of how better to curate this experience for specific users––what if a user is vegan, or allergic? We could also create more screens for areas we did not focus on for our prototype, such as checkout: how would our users be able to split costs for the cart?<br><br>
+
+            For future iterations, we would have liked to emphasize the benefits of a responsive design through the visual elements by really drawing out the tasks that we think users would be performing most often on different devices. In retrospect, our mobile design could have pulled more attention toward the process of creating and sharing carts among groups of people. Highlighting the shared carts feature on mobile could have helped us drive home our vision that the application is a quick and convenient alternative to the current experience to facilitate grocery shopping for groups.
+          </p>
+        </div>
+      </div>
+
       <div id="modal" class="the-modal">
           <img id="modalImage" class="modal-content">
           <span id="close" class="close"> &times; </span>
       </div>
+      
     </div>
 
     <script src="Assets/imageModal.js"></script>
