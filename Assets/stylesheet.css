@@ -12,14 +12,23 @@ body{
     line-height: 180%;
 }
 
+.nav-link{
+    font-weight:500;
+}
+
+#dive-in-button{
+    border-color: white;
+    color: white;
+    padding: 3% 5%;
+}
+
 .project-list{
-    margin: 0% 7%;
+    margin: 0% 8%;
 }
 
 #intro-row{
     margin: 3% 0% 5% 0%;
 }
-
 
 .intro-text{
     color:white;
@@ -50,25 +59,41 @@ img {
 #logo-name{
     color: white;
     letter-spacing: 9px;
-    font-size: xx-large;
+    font-size: 2rem;
     font-weight: 400;
     text-align: center;
 }
-
-/* .image-height{
-    max-height: 300px;
-    width:auto;
-} */
 
 a, a:hover{
     text-decoration: none;
     color: inherit;
 }
 
-.card-style{
-    background-color: #eef4ffd5;
+.middle{
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.3rem;
 }
 
+.project-brief{
+    background: linear-gradient(180deg, rgba(255,255,255,0) 45%, #aeffbb 65%);
+    display: inline;
+}
+
+.card:hover .card-img {
+    opacity: 0.05;;
+  }
+  
+.card:hover .middle {
+    opacity: 1;
+  }
+  
 .circle{
     height: 50px; 
     width: 50px;
@@ -91,6 +116,7 @@ a, a:hover{
     display:block;
     margin-left: auto;
     margin-right:auto;
+    position: sticky;
 }
 
 .about{
@@ -110,24 +136,14 @@ a, a:hover{
     margin-bottom: 6%;
 }
 
-/* .btn:hover{
-    background-color:red;
-    border-color: red;
-} */
-
-.btn{
-    color: rgb(82, 89, 95);
-    border-color: rgb(82, 89, 95);
-    padding: 2% 5%;
-    margin: 5% 0%;
+#side-project-text{
+    color:white;
+    text-align: center;
+    letter-spacing: 1px;
 }
+
 
 html { scroll-behavior: smooth; } 
-
-#dive-in-button{
-    border-color: white;
-    color: white;
-}
 
 @media only screen and (max-width: 767px) {
     #large-logo{ 
