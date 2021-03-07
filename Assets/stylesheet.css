@@ -16,10 +16,11 @@ body{
     font-weight:500;
 }
 
-#dive-in-button{
+.intro-button{
     border-color: white;
     color: white;
-    padding: 3% 5%;
+    padding: 2% 3%;
+    margin: 2%;
 }
 
 .project-list{
