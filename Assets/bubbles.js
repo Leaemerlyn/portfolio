@@ -1,6 +1,6 @@
 window.setInterval(updateBubbles, 16);
 
-let bubbleFrames = 45;
+let bubbleFrames = 60;
 let currentBubbleFrames = 0;
 
 let bubbles= [];
@@ -31,7 +31,7 @@ function pushBubble(bubble){
     yOffset = yOffset/dist;
     if (dist < 500){
         bubble.xPush = xOffset * 200/dist;
-        bubble.yPush = yOffset *200/dist;
+        bubble.yPush = yOffset * 200/dist;
     }
     else{
         bubble.xPush = 0;
@@ -57,8 +57,9 @@ class Bubble{
         this.element.className = "circle";
         this.realLeft = Math.random()*window.screen.width;
         this.element.style.left = (Math.floor(this.realLeft)).toString() + "px";
-        this.speed = 0.4 + Math.random()*0.8;
-        this.horizontalSpeed = (Math.random()*2-1) *0.35;
+        this.speed = 1 + Math.random()*1;
+        let horizontalRand = Math.random()*2-1;
+        this.horizontalSpeed = Math.sign(horizontalRand) * Math.max(0.5,Math.abs(horizontalRand)) * 0.66;
         document.body.appendChild(this.element);
         this.fadeSpeed = 0.008;
         this.alpha = 0.3;
