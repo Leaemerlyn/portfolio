@@ -11,6 +11,10 @@ body{
     line-height: 180%;
 }
 
+.nav-link{
+    font-weight:500;
+}
+
 
 a, a:hover{
     text-decoration: none;
