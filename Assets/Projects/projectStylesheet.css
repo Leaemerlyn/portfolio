@@ -1,8 +1,13 @@
+.project-width{
+    max-width: 900px;
+    margin: auto;
+}
 * {
     font-family: 'Lato', sans-serif;
     color: white;
-    font-weight: 300;
+    font-weight: 350;
     line-height: 1.7;
+    letter-spacing: 0.05ch;
 }
 
 a, a:hover{
@@ -37,6 +42,7 @@ body.body-modal{
 
 .section-title{
     color:#ABFAFF;
+
 }
 
 .project-brief{
@@ -91,7 +97,7 @@ img {
 
 hr{
     background-color:white;
-    width: 50%;
+    width: 100%;
 }
 
 #prototype1, #prototype2{
