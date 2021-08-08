@@ -2,6 +2,13 @@
     max-width: 900px;
     margin: auto;
 }
+
+
+hl{
+    border:2px dashed rgb(217, 255, 0);  
+    padding:0.03em 0.25em;
+}
+
 * {
     font-family: 'Lato', sans-serif;
     color: white;
