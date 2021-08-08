@@ -12,6 +12,13 @@ body{
     line-height: 180%;
 }
 
+.bottom-text{
+    color: white;
+    font-weight: 200;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 .nav-link{
     font-weight:500;
 }
